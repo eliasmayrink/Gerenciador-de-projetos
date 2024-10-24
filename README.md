@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Para rodar localmente esse projeto, você precisa:
 
-Things you may want to cover:
+* Instalar a versão 3.0.2 do ruby
 
-* Ruby version
+* Instalar a versão 7.1.4 do Rails
 
-* System dependencies
+* Clonar o repositório ´git clone https://github.com/eliasmayrink/Gerenciador-de-projetos.git´
 
-* Configuration
+* Já dentro do repositório clonado, você precisa rodar os seguintes comandos: 
 
-* Database creation
+'gem install bundler'
+'bundle install'
+'bin/rails db:create'
+'bin/rails db:migrate'
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Com todos os comandos rodados é só iniciar o server: 'bin/rails server' e acessar localhost:3000 no navegador
