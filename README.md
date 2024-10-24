@@ -2,7 +2,7 @@
 
 Para rodar localmente esse projeto, você precisa:
 
-* Instalar a versão 3.0.2 do ruby
+* Instalar a versão 3.3.5 do ruby
 
 * Instalar a versão 7.1.4 do Rails
 
