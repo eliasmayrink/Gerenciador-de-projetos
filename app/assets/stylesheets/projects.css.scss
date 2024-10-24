@@ -1,0 +1,204 @@
+/* index page */
+div.project-index {
+    padding: 25px;
+    h2.title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    a.new-project-button {
+        font-size: 16px;
+        display: inline-block;
+        width: 112px;
+        height: 29px;
+        line-height: 23px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 2px;
+        border: 2px solid #68C2FF;
+        background-color: #68C2FF;
+        &:hover {
+          color: white;
+          background: #3faef8;
+        }      
+    }
+    div.project-list {
+        margin-top: 30px;
+        a.project-link {
+            display: inline-block;
+            width: 310px;
+            text-decoration: none;
+        }
+        ul.project-item {
+            padding:15px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            border-radius: 2px;
+            width: 310px;
+            background-color: #f0eded;
+            li {
+                margin-bottom: 8px;
+                text-decoration: none;
+                color: #141313
+            }
+        }
+        span.quiet {
+            color: #858484
+        }
+    }
+}
+
+/* new page */
+div.project-new {
+    padding: 25px;
+    h2.title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+/* edit page */
+div.project-edit {
+    padding: 25px;
+    h2.title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+/* show page */
+div.project-show {
+    padding: 25px;
+    h2.title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    ul.project-attrs {
+        margin-bottom: 10px;
+        li {
+            margin-bottom: 8px;
+            color: #141313
+        }
+    }
+    span.quiet {
+        color: #858484
+    }
+    div.action-buttons {
+        margin-bottom: 30px;
+        a.edit {
+            font-size: 14px;
+            display: inline-block;
+            width: 90px;
+            height: 29px;
+            line-height: 23px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 2px;
+            border: 2px solid #68C2FF;
+            background-color: #68C2FF;
+            &:hover {
+            color: white;
+            background: #3faef8;
+            }      
+        }
+        form.button_to {
+            position: relative;
+            display: inline-block;
+            button.delete {
+                position: absolute;
+                top: -18px;
+                font-size: 14px;
+                display: inline-block;
+                width: 90px;
+                height: 29px;
+                line-height: 23px;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                border-radius: 2px;
+                border: 2px solid #e2391b;
+                background-color: #e2391b;
+                &:hover {
+                color: white;
+                background: #ce180a;
+                }      
+            }
+        }
+    }
+    h3.activity-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    a.create-activity {
+        font-size: 16px;
+        text-decoration: none;
+        color: #1f98e9;
+        &:hover {
+        color: #026aaf;
+        }      
+    }
+    div.activity-list {
+        margin-top: 30px;
+        ul.activity-item {
+            display: inline-table;
+            padding:15px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            border-radius: 2px;
+            width: 310px;
+            background-color: #f0eded;
+            li {
+                margin-bottom: 8px;
+                text-decoration: none;
+                color: #141313;
+
+            }
+            li.edit {
+                width: 60px;
+                display: inline-block;
+                a {
+                    font-size: 12px;
+                    display: inline-block;
+                    width: 60px;
+                    height: 25px;
+                    line-height: 22px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 2px;
+                    border: 2px solid #68C2FF;
+                    background-color: #68C2FF;
+                    &:hover {
+                    color: white;
+                    background: #3faef8;
+                    }      
+                }
+            }
+            li.delete {
+                width: 60px;
+                display: inline-block;
+                button {
+                    font-size: 12px;
+                    display: inline-block;
+                    width: 60px;
+                    height: 25px;
+                    line-height: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 2px;
+                    border: 2px solid #e2391b;
+                    background-color: #e2391b;
+                    &:hover {
+                    color: white;
+                    background: #ce180a;
+                    }      
+                }
+            }
+        }
+        span.quiet {
+            color: #858484
+        }
+    }
+}

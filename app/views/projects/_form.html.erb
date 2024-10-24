@@ -1,0 +1,17 @@
+<div class="form">
+    <%= form_with model: @project do |form| %>
+        <div class="input">
+            <%= form.label :name %>
+            <%= form.text_field :name %>
+        </div>
+        <div class="input date">
+            <%= form.label "Início" %>
+            <%= form.date_select :start_date %>
+        </div>
+        <div class="input date">
+            <%= form.label "Entrega" %>
+            <%= form.date_select :end_date %>
+        </div>
+        <%= form.submit "salvar", class: "button" %>
+    <% end %>
+</div>

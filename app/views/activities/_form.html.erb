@@ -1,0 +1,21 @@
+<div class="form">
+    <%= form_with url: @form_url, model: @activity do |form| %>
+        <div class="input">
+            <%= form.label :name %>
+            <%= form.text_field :name %>
+        </div>
+        <div class="input date">
+            <%= form.label "Início" %>
+            <%= form.date_select :start_date %>
+        </div>
+        <div class="input">
+            <%= form.label "Entrega" %>
+            <%= form.date_select :end_date %>
+        </div>
+        <div class="input">
+            <%= form.label "Finalizada?" %>
+            <%= form.select(:finished, [["não", false], ["sim", true]], selected: @activity.finished) %>
+        </div>
+        <%= form.submit "salvar", class: "button" %>
+    <% end %>
+</div>

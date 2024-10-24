@@ -1,0 +1,17 @@
+<div class="project-index">
+    <h2 class="title">Projetos</h2>
+    <%= link_to "Criar projeto", new_project_path, class: "new-project-button" %>
+    <div class="project-list">
+        <% for project in @projects %>
+            <%= link_to project_path(project), class: "project-link" do %>
+            <ul class="project-item">
+                <li><span class="quiet">Nome:</span> <%= project.name %></li>
+                <li><span class="quiet">Início:</span> <%= project.start_date %></li>
+                <li><span class="quiet">Entrega:</span> <%= project.end_date %></li>
+                <li><span class="quiet">Atrasos:</span> <%= humanized_boolean(project.expected_delay?) %></li>
+                <li><span class="quiet">Concluído:</span> <%= project.finished_percentage %>%</li>            
+            </ul>
+            <% end %>
+        <% end %>
+    </div>
+</div>

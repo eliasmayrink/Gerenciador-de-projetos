@@ -1,0 +1,27 @@
+<div class="project-show">
+    <h2 class="title"><%= @project.name %></h2>
+    <ul class="project-attrs">
+        <li><span class="quiet">Início:</span> <%= @project.start_date %></li>
+        <li><span class="quiet">Entrega:</span> <%= @project.end_date %></li>
+        <li><span class="quiet">Atrasos:</span> <%= humanized_boolean(@project.expected_delay?) %></li>
+        <li><span class="quiet">Concluído:</span> <%= @project.finished_percentage %>%</li>            
+    </ul>
+    <div class="action-buttons">
+        <%= link_to "Editar", edit_project_path(@project), class: "action edit" %>
+        <%= button_to "Excluir", project_path(@project), method: :delete, class: "action delete" %>
+    </div>
+    <h3 class="activity-title">Atividades</h3>
+    <%= link_to "Criar atividade", new_project_activity_path(@project), class: "create-activity" %>
+    <div class="activity-list">
+        <% for activity in @project.activities %>
+            <ul class="activity-item">
+                <li><span class="quiet">Nome:</span> <%= activity.name %></li>
+                <li><span class="quiet">Início:</span> <%= activity.start_date %></li>
+                <li><span class="quiet">Entrega:</span> <%= activity.end_date %></li>
+                <li><span class="quiet">Finalizada:</span> <%= humanized_boolean(activity.finished) %></li>
+                <li class="edit"><%= link_to "Editar", edit_project_activity_path(@project, activity) %></li>
+                <li class="delete"><%= button_to "Excluir", project_activity_path(@project, activity), method: :delete %></li>
+            </ul>
+        <% end %>
+    </div>
+</div>
