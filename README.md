@@ -1,10 +1,15 @@
 # README
 
+Url do projeto em produção: https://gerenciador-de-projetos-e3ek.onrender.com/projects/2
+
+
 Para rodar localmente esse projeto, você precisa:
 
 * Instalar a versão 3.3.5 do ruby
 
 * Instalar a versão 7.1.4 do Rails
+
+* Instalar postgres (caso ainda não tenha instalado)
 
 * Clonar o repositório ´git clone https://github.com/eliasmayrink/Gerenciador-de-projetos.git´
 

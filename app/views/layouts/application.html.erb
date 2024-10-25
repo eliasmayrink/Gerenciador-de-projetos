@@ -12,6 +12,13 @@
   <body>
     <%= link_to "Gerenciador de projetos", root_path, class: "root-link" %>
     <div class="content">
+      <% unless flash.empty? %>
+        <% flash.each do |key, value| %>
+          <div class="flash <%= key %>">
+            <%= value %>
+          </div>
+        <% end %>
+      <% end %>
       <%= yield %>
     </div>
   </body>

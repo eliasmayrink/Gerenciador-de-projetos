@@ -13,20 +13,29 @@ class ActivitiesController < ApplicationController
     def create
         @activity = project.activities.new(permited_params)
         if @activity.valid? && @activity.save
+            flash[:notice] = "Atividade criada com sucesso"
             redirect_to project_path(project)
+        else
+            flash[:error] = @activity.errors.objects.first.full_message
+            redirect_to new_project_activity_path
         end
     end
 
     def update
         @activity = project.activities.find(params[:id])
         if @activity.update(permited_params)
+            flash[:notice] = "Atividade Atualizada com sucesso"
             redirect_to project_path(project)
+        else
+            flash[:error] = @activity.errors.objects.first.full_message
+            redirect_to edit_project_activity_path        
         end
     end
 
     def destroy
         @activity = project.activities.find(params[:id])
         if @activity.destroy
+            flash[:notice] = "Atividade excluída com sucesso"
             redirect_to project_path(project)
         end
     end
