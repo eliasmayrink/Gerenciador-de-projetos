@@ -1,6 +1,6 @@
 # README
 
-Url do projeto em produção: https://gerenciador-de-projetos-e3ek.onrender.com/projects/2
+Url do projeto em produção: https://gerenciador-de-projetos-e3ek.onrender.com
 
 
 Para rodar localmente esse projeto, você precisa:
